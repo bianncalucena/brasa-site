@@ -2753,3 +2753,22 @@ nav > ul > li > a,
     cursor: wait;
     opacity: .72;
 }
+@media (min-width: 769px) {
+    .mega-menu {
+        width: auto;
+        min-width: 520px;
+        max-width: calc(100vw - 36px);
+        grid-template-columns: 190px 300px;
+        gap: 20px;
+        padding: 24px 28px;
+    }
+
+    .mega-menu-intro {
+        padding-right: 20px;
+    }
+
+    .mega-menu-links {
+        grid-template-columns: repeat(2, 140px);
+        gap: 12px 18px;
+    }
+}
