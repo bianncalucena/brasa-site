@@ -2724,3 +2724,32 @@ nav > ul > li > a,
         padding: 18px;
     }
 }
+.mensagem-formulario {
+    display: none;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.mensagem-formulario.sucesso,
+.mensagem-formulario.erro {
+    display: block;
+}
+
+.mensagem-formulario.sucesso {
+    color: #285d38;
+    background: #edf8f0;
+    border: 1px solid #b8e2c2;
+}
+
+.mensagem-formulario.erro {
+    color: #79103E;
+    background: #fff3f7;
+    border: 1px solid rgba(121, 16, 62, .28);
+}
+
+.formulario-card .botao:disabled {
+    cursor: wait;
+    opacity: .72;
+}
