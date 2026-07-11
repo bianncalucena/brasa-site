@@ -2696,3 +2696,17 @@ nav > ul > li > a,
         display: none;
     }
 }
+.formulario-container {
+    max-width: 625px;
+}
+
+.formulario-card {
+    gap: 18px;
+    padding: 28px;
+}
+
+@media (max-width: 768px) {
+    .formulario-card {
+        padding: 20px;
+    }
+}
