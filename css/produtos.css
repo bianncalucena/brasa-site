@@ -1,0 +1,294 @@
+.produto {
+    padding: 60px 0 90px;
+}
+
+.produto .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 45px;
+    color: #666;
+}
+
+.produto-grid {
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+
+
+.produto-galeria {
+    width: 480px;
+}
+
+.foto-principal {
+    width: 480px;
+    height: auto;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible;
+}
+
+.foto-principal img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 0;
+    display: block;
+}
+.miniaturas {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+    justify-content: center;
+}
+
+.miniatura {
+    width: 86px;
+    height: 86px;
+    object-fit: contain;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.miniatura.ativa {
+    border: 2px solid var(--cor-primaria);
+}
+
+
+
+.produto-info h1 {
+    font-size: 46px;
+    margin-bottom: 18px;
+}
+
+.categoria-produto {
+    display: inline-block;
+    color: var(--cor-primaria);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.descricao {
+    font-size: 18px;
+    color: var(--cor-cinza-texto);
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.lista-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.lista-produto li {
+    font-size: 17px;
+    color: #333;
+}
+
+.produto-info .botao-whatsapp {
+    margin-top: 0;
+}
+
+
+
+.especificacoes {
+    padding: 80px 0;
+    border-top: 1px solid #ececec;
+}
+
+.especificacoes h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.especificacoes h2::after {
+    display: none;
+}
+
+.tabela-especificacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tabela-especificacoes div {
+    padding: 20px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.tabela-especificacoes strong {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.tabela-especificacoes span {
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 900px) {
+    .produto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .produto-galeria,
+    .foto-principal {
+        width: 100%;
+    }
+
+    .foto-principal {
+        height: auto;
+    }
+
+    .tabela-especificacoes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .produto {
+        padding: 45px 0 70px;
+    }
+
+    .produto-info h1 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .miniaturas {
+        flex-wrap: wrap;
+    }
+
+    .tabela-especificacoes span {
+        font-size: 16px;
+    }
+}
+
+.produto-info h1 {
+    line-height: 1.12;
+}
+
+.descricao {
+    line-height: 1.55;
+}
+@media (max-width: 768px) {
+    .produto {
+        padding: 34px 0 54px;
+    }
+
+    .produto .breadcrumb {
+        display: none;
+    }
+
+    .produto-grid {
+        gap: 28px;
+    }
+
+    .produto-galeria,
+    .foto-principal {
+        width: 100%;
+    }
+
+    .foto-principal img {
+        max-height: 430px;
+        object-fit: contain;
+    }
+
+    .miniaturas {
+        justify-content: flex-start;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        flex-wrap: nowrap;
+    }
+
+    .miniatura {
+        flex: 0 0 64px;
+        width: 64px;
+        height: 64px;
+    }
+
+    .categoria-produto {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .produto-info h1 {
+        font-size: 30px;
+        line-height: 1.12;
+        margin-bottom: 14px;
+    }
+
+    .descricao {
+        font-size: 15px;
+        line-height: 1.55;
+        margin-bottom: 22px;
+    }
+
+    .lista-produto {
+        gap: 9px;
+        margin-bottom: 26px;
+    }
+
+    .lista-produto li {
+        font-size: 15px;
+    }
+
+    .especificacoes {
+        padding: 44px 0;
+    }
+
+    .especificacoes h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .tabela-especificacoes {
+        gap: 8px;
+    }
+
+    .tabela-especificacoes div {
+        padding: 14px 0;
+    }
+
+    .tabela-especificacoes strong {
+        font-size: 12px;
+    }
+
+    .tabela-especificacoes span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .foto-principal img {
+        max-height: 360px;
+    }
+
+    .produto-info h1 {
+        font-size: 28px;
+    }
+}
