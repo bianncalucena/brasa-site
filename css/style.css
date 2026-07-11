@@ -2772,3 +2772,210 @@ nav > ul > li > a,
         gap: 12px 18px;
     }
 }
+.produtos-topo {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 72px 0;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,.55), transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,.35), transparent 45%),
+        linear-gradient(135deg,#efefef,#cfcfcf,#e7e7e7);
+}
+
+.produtos-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 650px) minmax(360px, 1fr);
+    gap: 54px;
+    align-items: center;
+}
+
+.produtos-hero-texto {
+    max-width: 650px;
+}
+
+.produtos-selo {
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    border-left-width: 7px;
+    padding-left: 14px;
+    margin-bottom: 18px;
+}
+
+.products-title {
+    max-width: 650px;
+}
+
+.products-title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 5px;
+    background: var(--cor-secundaria);
+    margin-top: 22px;
+    border-radius: 50px;
+}
+
+.produtos-hero-texto p {
+    max-width: 600px;
+    margin: 24px 0 30px;
+    color: #3f3f3f;
+    font-size: 19px;
+    line-height: 1.65;
+}
+
+.produtos-cta {
+    box-shadow: 0 12px 28px rgba(121, 16, 62, .18);
+}
+
+.produtos-hero-visual {
+    position: relative;
+    min-height: 330px;
+}
+
+.produto-visual {
+    position: absolute;
+    display: block;
+    object-fit: contain;
+    background: rgba(255,255,255,.72);
+    border: 1px solid rgba(255,255,255,.68);
+    box-shadow: 0 24px 55px rgba(35, 35, 35, .18);
+}
+
+.produto-visual-colete-laranja {
+    z-index: 3;
+    left: 118px;
+    top: 0;
+    width: 230px;
+    height: 300px;
+    padding: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.produto-visual-colete-amarelo {
+    z-index: 2;
+    left: 0;
+    top: 48px;
+    width: 190px;
+    height: 252px;
+    padding: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.produto-visual-placas {
+    z-index: 4;
+    right: 18px;
+    bottom: 4px;
+    width: 170px;
+    height: 205px;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .produtos-hero-grid {
+        grid-template-columns: minmax(0, 1fr) 330px;
+        gap: 34px;
+    }
+
+    .produtos-hero-visual {
+        min-height: 300px;
+    }
+
+    .produto-visual-colete-laranja {
+        left: 96px;
+        width: 196px;
+        height: 266px;
+    }
+
+    .produto-visual-colete-amarelo {
+        width: 166px;
+        height: 226px;
+    }
+
+    .produto-visual-placas {
+        right: 0;
+        width: 140px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos-topo {
+        min-height: auto;
+        padding: 48px 0;
+        text-align: center;
+    }
+
+    .produtos-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .produtos-topo .tag {
+        display: inline-block;
+    }
+
+    .products-title::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .produtos-hero-texto p {
+        margin: 20px auto 24px;
+        font-size: 16px;
+    }
+
+    .produtos-hero-visual {
+        min-height: 230px;
+        max-width: 360px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .produto-visual-colete-laranja {
+        left: 96px;
+        width: 160px;
+        height: 214px;
+    }
+
+    .produto-visual-colete-amarelo {
+        left: 8px;
+        top: 40px;
+        width: 128px;
+        height: 174px;
+    }
+
+    .produto-visual-placas {
+        right: 8px;
+        width: 112px;
+        height: 136px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .produtos-hero-visual {
+        min-height: 205px;
+        max-width: 310px;
+    }
+
+    .produto-visual-colete-laranja {
+        left: 82px;
+        width: 138px;
+        height: 190px;
+    }
+
+    .produto-visual-colete-amarelo {
+        width: 112px;
+        height: 154px;
+    }
+
+    .produto-visual-placas {
+        width: 98px;
+        height: 120px;
+    }
+}
