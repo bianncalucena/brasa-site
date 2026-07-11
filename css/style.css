@@ -2710,3 +2710,17 @@ nav > ul > li > a,
         padding: 20px;
     }
 }
+.formulario-container {
+    max-width: 530px;
+}
+
+.formulario-card {
+    gap: 16px;
+    padding: 24px;
+}
+
+@media (max-width: 768px) {
+    .formulario-card {
+        padding: 18px;
+    }
+}
