@@ -2772,3 +2772,28 @@ nav > ul > li > a,
         gap: 12px 18px;
     }
 }
+.pagina-topo h1::after,
+.categoria-topo h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 5px;
+    background: var(--cor-secundaria);
+    margin-top: 22px;
+    border-radius: 50px;
+}
+
+.categoria-topo h1::after,
+.sobre-topo h1::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .pagina-topo h1::after,
+    .categoria-topo h1::after {
+        width: 72px;
+        height: 4px;
+        margin-top: 16px;
+    }
+}
