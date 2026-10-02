@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18468887392">
-</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18468887392"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,6 +26,23 @@
 
   gtag('config', 'AW-18468887392');
 </script>
+
+<!-- Conversão: Orçamento Wpp -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18468887392/RM09CJ38oI4dEOC20-ZE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
 </head>
 
@@ -155,9 +172,12 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5511988133214?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="whatsapp-fixo" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/5511988133214?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+   class="whatsapp-fixo"
+   target="_blank"
+   onclick="return gtag_report_conversion(this.href);">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 </body>
 
 </html>

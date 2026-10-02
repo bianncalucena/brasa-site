@@ -25,6 +25,22 @@
   gtag('config', 'AW-18468887392');
 </script>
 
+<!-- Conversão: Orçamento Wpp -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18468887392/RM09CJ38oI4dEOC20-ZE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 
 <body>
@@ -112,7 +128,10 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5511988133214?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="whatsapp-fixo" target="_blank">
+    <a href="https://wa.me/5511988133214?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+   class="whatsapp-fixo"
+   target="_blank"
+   onclick="return gtag_report_conversion(this.href);">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 </body>
