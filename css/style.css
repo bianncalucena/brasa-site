@@ -2863,3 +2863,111 @@ header, .header, .site-header {
         padding-top: 20px !important;
     }
 }
+
+
+/* Espaçamento dos textos da página aeroportuária */
+.produtos-topo p + p {
+    margin-top: 18px;
+}
+
+
+
+/* =====================================
+   BRASA - PÁGINA AEROPORTUÁRIA
+   ===================================== */
+
+/* Organização dos produtos */
+.pagina-aeroporto .segmentos-produtos .segmento-grid-menor {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 950px;
+    gap: 36px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Cards */
+.pagina-aeroporto .segmentos-produtos .produto-card {
+    width: 100%;
+    max-width: none;
+    padding: 22px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* Imagens */
+.pagina-aeroporto .segmentos-produtos .produto-card img {
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+    object-fit: contain;
+    margin-bottom: 22px;
+}
+
+/* Títulos */
+.pagina-aeroporto .segmentos-produtos .produto-card h3 {
+    font-size: 22px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+}
+
+/* Descrições */
+.pagina-aeroporto .segmentos-produtos .produto-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .pagina-aeroporto .segmentos-produtos .segmento-grid-menor {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 24px;
+    }
+
+    .pagina-aeroporto .segmentos-produtos .produto-card img {
+        height: 260px;
+    }
+
+    .pagina-aeroporto .segmentos-produtos .produto-card h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* SOLUÇÕES AEROPORTUÁRIAS */
+
+.pagina-aeroporto .aeroporto-solucoes {
+    background: #f7f7f7;
+    padding: 75px 0 85px;
+}
+
+.pagina-aeroporto .aeroporto-solucoes h2 {
+    max-width: 850px;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 28px;
+}
+
+.pagina-aeroporto .aeroporto-solucoes p {
+    max-width: 900px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .pagina-aeroporto .aeroporto-solucoes h2 {
+        font-size: 26px;
+    }
+
+    .pagina-aeroporto .aeroporto-solucoes p {
+        font-size: 16px;
+    }
+}
