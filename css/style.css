@@ -356,13 +356,16 @@ section h2::after {
     border-radius:20px;
 
 }
+
 .produtos-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-    max-width: 1200px;
+    grid-template-columns: repeat(3, 253px);
+    justify-content: center;
+    gap: 36px;
+    width: 100%;
     margin: 0 auto;
 }
+
 
 .produto-card {
     background: #fff;
@@ -2937,7 +2940,6 @@ header, .header, .site-header {
         font-size: 20px;
     }
 }
-
 
 
 /* SOLUÇÕES AEROPORTUÁRIAS */
